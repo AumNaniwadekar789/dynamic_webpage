@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aum's Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aum's Travel Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#travel-lists" class="dropbtn">Travel Lists</a>
+                    <div class="dropdown-content">
+                        <a href="#places-to-visit">Places to Visit</a>
+                        <a href="#itinerary">Travel Itinerary</a>
+                        <a href="#essentials">Travel Essentials</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#travel-package-details" class="dropbtn">Packages</a>
+                    <div class="dropdown-content">
+                        <a href="#basic-package">Basic Package</a>
+                        <a href="#premium-package">Premium Package</a>
+                    </div>
+                </li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Aum's Travel Planner</h2>
+            <p>Plan your next adventure with ease.</p>
+        </section>
+
+        <section id="travel-lists">
+            <h2 id="places-to-visit">Places to Visit</h2>
+            <ul>
+                <li>Paris</li>
+                <li>New York</li>
+                <li>Tokyo</li>
+            </ul>
+
+            <h2 id="itinerary">Travel Itinerary</h2>
+            <ol>
+                <li>Day 1: Arrival and City Tour</li>
+                <li>Day 2: Museum Visits</li>
+                <li>Day 3: Shopping and Departure</li>
+            </ol>
+
+            <h2 id="essentials">Travel Essentials</h2>
+            <dl>
+                <dt>Passport</dt>
+                <dd>A valid travel document needed for international travel.</dd>
+                <dt>Travel Insurance</dt>
+                <dd>Insurance covering medical expenses, trip cancellations, and other incidents.</dd>
+                <dt>Currency</dt>
+                <dd>Local currency for the destination country.</dd>
+            </dl>
+        </section>
+
+        <section id="travel-package-details">
+            <h2>Travel Package Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr id="basic-package">
+                        <td>Basic Package</td>
+                        <td>Includes flight and hotel accommodation.</td>
+                        <td>$500.00</td>
+                    </tr>
+                    <tr id="premium-package">
+                        <td>Premium Package</td>
+                        <td>Includes flight, hotel, and guided tours.</td>
+                        <td>$1000.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section id="select-destination">
+            <h2>Select Your Destination</h2>
+            <form>
+                <label for="destination">Choose a destination:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+                <button type="submit">Go</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aum's Travel Planner</p>
+    </footer>
+</body>
+</html>
